@@ -23,7 +23,9 @@ const products = [
   { id: "AR005", name: "Wedding Wishes Frame", category: "Wishes", image: "./assets/Wedding-Wishes.jpg", description: "A beautiful wedding collage, heartfelt wishes and memories to cherish forever." },
   { id: "AR006", name: "Special Moments Frame", category: "Photo collage", image: "./assets/Special-Moments.jpg", description: "A collection of favourite portraits, happy moments and memories captured forever." },
   { id: "AR007", name: "Couple Love Frame", category: "Couple", image: "./assets/Couple-Love.jpg", description: "A beautiful couple portrait, a heartfelt message and a love story to cherish forever." },
-  { id: "AR008", name: "Sister’s Special Frame", category: "portrait", image: "./assets/Sister’s-Special.jpg", description: "A favourite portrait, endless love and a beautiful memory of your beloved sister." }
+  { id: "AR008", name: "Sister’s Special Frame", category: "portrait", image: "./assets/Sister’s-Special.jpg", description: "A favourite portrait, endless love and a beautiful memory of your beloved sister." },
+    { id: "AR001", name: "Birthday heart collage Frame", category: "Birthday & celebration", image: "./assets/birthday-frame2.jpg", description: "A birthday message, a favourite portrait and a memory to keep." }
+
 ];
 
 const money = (amount) => `₹${amount.toLocaleString("en-IN")}`;
