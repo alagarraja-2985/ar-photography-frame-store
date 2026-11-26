@@ -200,3 +200,28 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
+// FAQ ACCORDION
+
+document.querySelectorAll(".faq-question").forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        const currentItem = button.closest(".faq-item");
+        const isActive = currentItem.classList.contains("active");
+
+        // Close all FAQ items
+        document.querySelectorAll(".faq-item").forEach(item => {
+            item.classList.remove("active");
+            item.querySelector("span").textContent = "+";
+        });
+
+        // Open the selected item
+        if (!isActive) {
+            currentItem.classList.add("active");
+            button.querySelector("span").textContent = "−";
+        }
+
+    });
+
+});
